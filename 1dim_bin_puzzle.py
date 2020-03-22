@@ -1,9 +1,9 @@
 #Puzzle adalah Binary Puzzle 1 dimensi yang hanya mengikuti (0,2)-constraint.
 #Blank Cell dinotasikan dengan '_'
 
-#puzzle = '_00_10_0_11__00_'
+puzzle = '_00_10_0_11__00_'
 #puzzle = '___00_010__10__'
-puzzle = '100___0011'  #ini jadi masalah, butuh bantuan yg ini, soale ngebug
+#puzzle = '100___0011'
 a = list(puzzle)
 change = True
 
@@ -32,7 +32,7 @@ while change:
                 a[i+1] = '1'
                 change =True
             elif a[i] == '1':
-                a[i+1] == '0'
+                a[i+1] = '0'
                 change =True
 
 puzzle, ''.join(a)
